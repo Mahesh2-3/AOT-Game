@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOT Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="menusvg" src="assets/menu.svg" alt="">
+    <div class="gamescore upgamescore">
+        <h2>GAME SCORE</h2>
+        <div class="score upscore">0</div>
+    </div>
+    <div class="fire-bg">
+        <img id="crosstitle" src="assets/cross.svg" alt="">
+        <div class="fire-bg-div">
+            <div>ATTACK ON TITAN</div>
+            <h3>FIRE THE CANNON</h3>
+        </div>
+        <button class="upstart_pause">Start</button>
+    </div>
+    <div id="overlay">
+        <div id="message">Paused</div>
+    </div>
+    <audio class="ballaudio" src="assets/bit-cannon-85932.mp3"></audio>
+    <main>
+        <div class="menu">
+            <div class="icon-container">
+                <div class="info">
+                    <img class="infoimg infosvg" src="assets/info.svg" alt="">
+                </div>
+                <div class="details" id="details">
+                    <p>Use Arrow Keys or W, A, D to control the game.</p>
+                    <ul>
+                        <li>ArrowRight or 'D': Move Right</li>
+                        <li>ArrowLeft or 'A': Move Left</li>
+                        <li>ArrowUp or 'W': Fireball</li>
+                        <li>ArrowDown: Reset High Score</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="options">
+                <div class="gamemode">
+                    <h1>Game Mode</h1>
+                    <button class="levels easy">Easy</button>
+                    <button class="levels medium">Medium</button>
+                    <button class="levels hard">Hard</button>
+                </div>
+                <div class="gamescore downgamescore">
+                    <h2>GAME SCORE</h2>
+                    <div class="score downscore">0</div>
+                </div>
+                <div class="ctlbtn2">
+                    <button class="start_pause">Start</button>
+                    <button class="exitgame">Exit Game</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="ctlbtn1">
+                    <img class="left btn" src="assets/leftsvg.svg" alt="">
+                    <img class="fire btn" src="assets/fire.svg" alt="">
+                    <img class="right btn" src="assets/rightsvg.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gamescreen">
+            <div class="animation">
+                <div class="cannonballdiv div1"></div>
+                <div class="cannonballdiv div2"></div>
+                <div class="cannonballdiv div3"></div>
+                <div class="cannonballdiv div4"></div>
+                <div class="cannonballdiv div5"></div>
+                <div class="cannonballdiv div6"></div>
+                <div class="cannonballdiv div7"></div>
+            </div>
+            <div class="cannon">
+                <div class="cannon-div div1">
+                    <img class="cannonimg" src="assets/cannon.png" alt="">
+                     <img class="flame" src="assets/flame.png" alt="">
+                </div>
+                <div class="cannon-div div2"></div>
+                <div class="cannon-div div3"></div>
+                <div class="cannon-div div4"></div>
+                <div class="cannon-div div5"></div>
+                <div class="cannon-div div6"></div>
+                <div class="cannon-div div7"></div>
+                <div class="ctlbtn1 rescontrols">
+                    <img class="left btn" src="assets/leftsvg.svg" alt="">
+                    <img class="fire btn" src="assets/fire.svg" alt="">
+                    <img class="right btn" src="assets/rightsvg.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
