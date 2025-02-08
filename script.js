@@ -28,7 +28,7 @@ if (window.innerWidth<700) {
     leftpx=40
 } else {
     count1= -20
-    leftleftpx + "%"
+    leftpx + "%"
 }
 
 let count = 0;
@@ -421,7 +421,7 @@ function start_pause_event() {
         }
         const overlay = document.getElementById("overlay");
         overlay.style.display = "none";
-        menusvg.style.zIndex = 1500
+        menusvg.style.zIndex = 1610
     }
     if (game == "off") {
         resume()
@@ -541,7 +541,7 @@ menusvg.addEventListener("click", () => {
 
 crosstitle.addEventListener("click", () => {
     document.body.querySelector(".fire-bg").style.display = "none"
-    menusvg.style.zIndex = 1500
+    menusvg.style.zIndex = 1610
     const overlay = document.getElementById("overlay");
     overlay.style.display = "none";
 })
