@@ -432,7 +432,7 @@ h1 {
     display: none;
     width: 30px;
     cursor: pointer;
-    z-index: 900;
+    z-index: 1610;
 }
 
 
@@ -467,7 +467,7 @@ h1 {
     .menu {
         background-color: #fff5e9;
         padding-top: 50px;
-        z-index: 1200;
+        z-index: 1500;
         position: absolute;
         left: -100%;
         width: 25%;
@@ -479,6 +479,7 @@ h1 {
 
     .gamescreen {
         width: 100%;
+        margin-bottom:50px;
     }
 
     .footer .ctlbtn1 {
@@ -525,7 +526,7 @@ h1 {
     }
     .flame {
         left: -20px;
-        top: 0px;
+        top: -3px;
     }
     .fire-bg-div{
         margin-bottom: 30px;
