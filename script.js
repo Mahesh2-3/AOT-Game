@@ -36,7 +36,7 @@ let num = 0;
 let width;
 let titanInterval;
 let game = "off";
-let easymodetime=1200;
+let easymodetime=1600;
 let gamemodetime = easymodetime
 let score = 0
 
