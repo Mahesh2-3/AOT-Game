@@ -406,6 +406,7 @@ h1 {
 
 .div1 {
     position: relative;
+    top:-12px;
 }
 
 
@@ -526,7 +527,7 @@ h1 {
     }
     .flame {
         left: -20px;
-        top: -3px;
+        top: 9px;
     }
     .fire-bg-div{
         margin-bottom: 30px;
