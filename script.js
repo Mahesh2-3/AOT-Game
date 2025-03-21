@@ -451,10 +451,10 @@ document.querySelector(".exitgame").addEventListener("click", () => {
     if (document.querySelector(".menu").style.left = "0%") {
         document.querySelector(".menu").style.left = "-100%"
         menusvg.style.left = "1%"
-        menusvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/menu.svg"
+        menusvg.src = "./assets/menu.svg"
     }
     Count = 0
-    menusvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/menu.svg"
+    menusvg.src = "./assets/menu.svg"
 })
 
 
