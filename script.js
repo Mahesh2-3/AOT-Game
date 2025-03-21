@@ -187,7 +187,7 @@ let Count = 0
 function bombblast(number, length, titan) {
     let collisionflame = document.createElement("img")
     collisionflame.classList.add("blast")
-    collisionflame.src = "assets/bombblastbg.png"
+    collisionflame.src = "./assets/bombblastbg.png"
     cannonballdiv[number].appendChild(collisionflame)
     let titan_no = titan.src.split("titan")[1]
     if (titan_no == "2.png") {
@@ -299,7 +299,7 @@ function fireball() {
     if (game == "on") {
         const cannonball = document.createElement("img");
         cannonball.classList.add("cannonball");
-        cannonball.src = "assets/cannonball.svg";
+        cannonball.src = "./assets/cannonball.svg";
         cannonballdiv[n].appendChild(cannonball);
         const height = cannonballdiv[n].offsetHeight;
         setTimeout(() => {
@@ -339,7 +339,7 @@ function titanfunc() {
         const titan = document.createElement("img");
         titan.classList.add("titan");
         titan.id = generateRandomId();
-        titan.src = `assets/${randomItem}.png`;
+        titan.src = `./assets/${randomItem}.png`;
         cannonballdiv[number].appendChild(titan);
 
         const height = cannonballdiv[number].offsetHeight;
@@ -428,7 +428,7 @@ function start_pause_event() {
         if (document.querySelector(".menu").style.left = "0%") {
             document.querySelector(".menu").style.left = "-100%"
             menusvg.style.left = "1%"
-            menusvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/menu.svg"
+            menusvg.src = "./assets/menu.svg"
         }
     } else if (game == "on") {
         pause()
@@ -513,29 +513,29 @@ function toggleDetails() {
     }
 }
 infosvg.addEventListener("click", () => {
-    if (infosvg.src == "https://mahesh2-3.github.io/AOT-Game/assets/info.svg") {
-        infosvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/cross.svg"
+    if (infosvg.src == "./assets/info.svg") {
+        infosvg.src = "./assets/cross.svg"
     } else {
-        infosvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/info.svg"
+        infosvg.src = "./assets/info.svg"
     }
     toggleDetails()
 })
 menusvg.addEventListener("click", () => {
-    if (game == "on" && menusvg.src == "https://mahesh2-3.github.io/AOT-Game/assets/menu.svg") {
+    if (game == "on" && menusvg.src == "./assets/menu.svg") {
         document.querySelector(".menu").style.left = "0%"
         menusvg.style.left = leftpx + "%"
-        menusvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/cancel.svg"
+        menusvg.src = "./assets/cancel.svg"
         pause()
         return
     }
-    if (menusvg.src == "https://mahesh2-3.github.io/AOT-Game/assets/cancel.svg") {
+    if (menusvg.src == "./assets/cancel.svg") {
         document.querySelector(".menu").style.left = "-100%"
         menusvg.style.left = "1%"
-        menusvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/menu.svg"
+        menusvg.src = "./assets/menu.svg"
     } else {
         document.querySelector(".menu").style.left = "0%"
         menusvg.style.left = leftpx + "%"
-        menusvg.src = "https://mahesh2-3.github.io/AOT-Game/assets/cancel.svg"
+        menusvg.src = "./assets/cancel.svg"
     }
 })
 
