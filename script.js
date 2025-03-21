@@ -521,14 +521,14 @@ infosvg.addEventListener("click", () => {
     toggleDetails()
 })
 menusvg.addEventListener("click", () => {
-    if (game == "on" && menusvg.src == "./assets/menu.svg") {
+    if (game == "on" && menusvg.src.includes("/assets/menu.svg")) {
         document.querySelector(".menu").style.left = "0%"
         menusvg.style.left = leftpx + "%"
         menusvg.src = "./assets/cancel.svg"
         pause()
         return
     }
-    if (menusvg.src == "./assets/cancel.svg") {
+    if (menusvg.src.includes("/assets/cancel.svg")) {
         document.querySelector(".menu").style.left = "-100%"
         menusvg.style.left = "1%"
         menusvg.src = "./assets/menu.svg"
